@@ -18,3 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('/task', 'ContextController')->only([
+    'index', 'store', 'update', 'destroy'
+]);
+Route::resource('/context', 'ContextController')->only([
+    'index', 'store', 'update', 'destroy'
+]);

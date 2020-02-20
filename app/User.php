@@ -36,4 +36,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function contexts(){
+        return $this->hasMany(Context::class,'user');
+    }
+
+    public function tasks(){
+        return $this->hasMany(Task::class, 'user');
+    }
+
+    public function folders(){
+        return $this->hasMany(Folder::class, 'user');
+    }
 }
