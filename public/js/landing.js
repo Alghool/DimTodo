@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -37045,17 +37045,6 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/js/app.js":
-/*!*****************************!*\
-  !*** ./resources/js/app.js ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
 /***/ "./resources/js/bootstrap.js":
 /*!***********************************!*\
   !*** ./resources/js/bootstrap.js ***!
@@ -37117,39 +37106,26 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 /***/ }),
 
-/***/ "./resources/sass/app.scss":
+/***/ "./resources/js/landing.js":
 /*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
+  !*** ./resources/js/landing.js ***!
   \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+
 
 /***/ }),
 
-/***/ "./resources/sass/landing.scss":
-/*!*************************************!*\
-  !*** ./resources/sass/landing.scss ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ 0:
-/*!********************************************************************************************************************!*\
-  !*** multi ./resources/js/common.js ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/landing.scss ***!
-  \********************************************************************************************************************/
+/***/ 1:
+/*!****************************************************************!*\
+  !*** multi ./resources/js/common.js ./resources/js/landing.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! D:\laravel\dimTodo\resources\js\common.js */"./resources/js/common.js");
-__webpack_require__(/*! D:\laravel\dimTodo\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! D:\laravel\dimTodo\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! D:\laravel\dimTodo\resources\sass\landing.scss */"./resources/sass/landing.scss");
+module.exports = __webpack_require__(/*! D:\laravel\dimTodo\resources\js\landing.js */"./resources/js/landing.js");
 
 
 /***/ })

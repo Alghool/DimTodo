@@ -2,10 +2,11 @@
 
 namespace App\Providers;
 
+use App\Http\composers\MainSideBarComposer;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Schema;
 
-class AppServiceProvider extends ServiceProvider
+class ViewComposerProvider extends ServiceProvider
 {
     /**
      * Register any application services.
@@ -14,7 +15,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+
     }
 
     /**
@@ -24,9 +25,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Schema::defaultStringLength(191); //to support old sql engines
-
-
-
+        View::composer('sideMenu.main', MainSideBarComposer::class);
     }
 }
