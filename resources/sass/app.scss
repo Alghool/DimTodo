@@ -17,6 +17,9 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
+    &>div{
+      width: 100%;
+    }
     .top-logo-holder{
       width: 100%;
       padding: 1rem;
@@ -29,24 +32,31 @@
         height: 65px;
       }
     }
-    .smart-lists-holder{
+    ul{
+      list-style: none;
       width: 100%;
-      .smartlist{
-        list-style: none;
-
-        padding: 1rem;
-        margin: 0;
-        li{
-
-        }
-      }
+      padding: 0;
+      margin: 0;
+      border-bottom: white 1px solid;
     }
     .user-widget-holder{
       margin-top: auto;
     }
   }
+
+  a{
+    color:$light-color;
+    &.active,&:hover{
+      background-color: $accent-color;
+    }
+  }
 }
 
 
-
+.side-icon{
+  width: 2rem;
+  height: 1.5rem;
+  display: inline-block;
+  text-align: center;
+}
 

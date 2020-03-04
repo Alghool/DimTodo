@@ -10910,6 +10910,10 @@ a.text-dark:focus {
   height: 100%;
 }
 
+#side-bar .side-bar > div {
+  width: 100%;
+}
+
 #side-bar .side-bar .top-logo-holder {
   width: 100%;
   padding: 1rem;
@@ -10924,17 +10928,31 @@ a.text-dark:focus {
   height: 65px;
 }
 
-#side-bar .side-bar .smart-lists-holder {
-  width: 100%;
-}
-
-#side-bar .side-bar .smart-lists-holder .smartlist {
+#side-bar .side-bar ul {
   list-style: none;
-  padding: 1rem;
+  width: 100%;
+  padding: 0;
   margin: 0;
+  border-bottom: white 1px solid;
 }
 
 #side-bar .side-bar .user-widget-holder {
   margin-top: auto;
+}
+
+#side-bar a {
+  color: white;
+}
+
+#side-bar a.active,
+#side-bar a:hover {
+  background-color: darkBlue;
+}
+
+.side-icon {
+  width: 2rem;
+  height: 1.5rem;
+  display: inline-block;
+  text-align: center;
 }
 

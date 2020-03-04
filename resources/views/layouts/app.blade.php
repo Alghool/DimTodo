@@ -16,11 +16,14 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/fontello.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/animation.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-   <nav id="side-bar">
+   <aside id="side-bar">
        @yield('sideBar')
-   </nav>
+   </aside>
    <div id="main-page">
        <nav id="top-bar">
            @yield('topBar')
